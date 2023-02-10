@@ -78,3 +78,63 @@ height: 117px;
     font-size: 16px;
     color: #562EFF;
 }
+
+/* courses style */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course .corse-banner img{
+    width: 266px;
+height: 141px;
+}
+.corse-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+   font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empy{
+    color: #AEAEAE;
+}
+.fa-clock, span{
+    color: #FF4A60;
+}
+.course-duration{
+    background: #FFE4E8;
+    border-radius: 14.6913px
+}
+/* media queries */
+
+/* mobile divices */
+@media only screen and (max-width:688px)  {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        /* background-color: red; */
+        grid-template-columns: repeat(1, 1fr);
+         
+    }
+    .player, .blog, .courses{
+        flex-direction: column;
+    }
+    x
+}
+
+/* teblet divices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+  .players, .courses{
+    grid-template-columns: repeat(2, 1fr);
+  }    
+}
